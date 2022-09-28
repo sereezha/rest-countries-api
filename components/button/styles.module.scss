@@ -1,0 +1,27 @@
+@import 'styles/variables';
+
+.button.button {
+  align-items: center;
+  gap: 0.57em;
+  min-width: 5.57em;
+  padding: 0.42em 1.7em;
+  box-shadow: 0 0 0.5em var(--clr-blue-470);
+  border-radius: 0.14em;
+  font-size: 1.4rem;
+  line-height: 1.42;
+  font-weight: var(--fw-light);
+  background-color: var(--elements-bg);
+}
+
+.icon {
+  --size: 1.14em;
+
+  display: flex;
+  width: var(--size);
+  height: var(--size);
+  fill: currentColor;
+
+  @media screen and (min-width: $breakpoint-md) {
+    --size: 1.28em;
+  }
+}

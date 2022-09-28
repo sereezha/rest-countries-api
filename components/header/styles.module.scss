@@ -1,0 +1,63 @@
+@import 'styles/variables';
+
+.header {
+  padding-block: 3rem;
+  background-color: var(--elements-bg);
+  box-shadow: 0 0.2rem 0.4rem var(--clr-blue-450);
+
+  @media screen and (min-width: $breakpoint-md) {
+    padding-block: 2.4rem;
+  }
+}
+
+.header .button {
+  align-items: center;
+  font-size: 1.2rem;
+  gap: 0.66em;
+  color: var(--text-color);
+
+  @media screen and (min-width: $breakpoint-md) {
+    font-size: 1.6rem;
+    gap: 0.5em;
+  }
+}
+
+.iconMoon {
+  --size: 1.6rem;
+
+  display: flex;
+  width: var(--size);
+  height: var(--size);
+  fill: transparent;
+  stroke: var(--text-color);
+
+  [data-theme="dark"] & {
+    fill: var(--text-color);
+  }
+
+  @media screen and (min-width: $breakpoint-md) {
+    --size: 2rem;
+  }
+}
+
+.headerInner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 2rem;
+}
+
+.title {
+  font-weight: var(--fw-extrabold);
+  line-height: 1.37;
+  color: var(--text-color);
+  font-size: 1.4rem;
+
+  a {
+    text-decoration: none;
+  }
+
+  @media screen and (min-width: $breakpoint-md) {
+    font-size: 2.4rem;
+  }
+}

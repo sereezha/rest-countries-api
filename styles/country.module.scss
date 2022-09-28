@@ -1,0 +1,48 @@
+@import "styles/variables";
+
+.countryPage {
+  padding-block: 4rem;
+
+  @media screen and (min-width: $breakpoint-md) {
+    padding-block: 8rem;
+  }
+}
+
+.countryPage .button {
+  margin-bottom: 6.4rem;
+
+  @media screen and (min-width: $breakpoint-md) {
+    margin-bottom: 8rem;
+  }
+}
+
+.content {
+  display: grid;
+  gap: 4.4rem;
+
+  @media screen and (min-width: $breakpoint-md) {
+    grid-template-columns: repeat(2, minmax(auto, 56rem));
+    align-items: center;
+    justify-content: space-between;
+  }
+}
+
+.title {
+  margin-bottom: 1.6rem;
+  font-weight: var(--fw-extrabold);
+  font-size: 2.2rem;
+  line-height: 1.36;
+
+  @media screen and (min-width: $breakpoint-md) {
+    margin-bottom: 2.4rem;
+    font-size: 3.2rem;
+  }
+}
+
+.image {
+  position: relative;
+  aspect-ratio: 320/229;
+  overflow: hidden;
+  max-width: 56rem;
+  border-radius: var(--border-radius);
+}

@@ -1,0 +1,15 @@
+.button {
+  -webkit-appearance: none;
+	-moz-appearance: none;
+  appearance: none;
+	border: 0;
+  border-radius: 0;
+  background: transparent;
+	cursor: pointer;
+	display: inline-flex;
+  justify-content: center;
+	font: inherit;
+	padding: 0;
+	text-align: center;
+  line-height: 1.1;
+}

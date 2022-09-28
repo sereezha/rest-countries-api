@@ -1,0 +1,65 @@
+@import "styles/variables";
+
+.input {
+  --icon-size: 1em;
+  --block-padding: 0.85em;
+  --inline-padding: 1.99em;
+  --placeholder-color: var(--clr-white-500);
+
+  position: relative;
+  font-size: 1.6rem;
+  color: var(--text-color);
+  background-color: var(--elements-bg);
+  box-shadow: 0 2px 9px var(--clr-blue-450);
+  border-radius: var(--border-radius);
+
+  @media screen and (min-width: $breakpoint-md) {
+    --icon-size: 1.29em;
+
+    font-size: 1.4rem;
+  }
+
+  html[data-theme="dark"] & {
+    --placeholder-color: var(--clr-white-100);
+  }
+}
+
+.inputDisabled {
+  opacity: 0.5;
+  input {
+    cursor: not-allowed;
+  }
+}
+
+.icon {
+  position: absolute;
+  top: 50%;
+  left: var(--inline-padding);
+  transform: translateY(-50%);
+  width: var(--icon-size);
+  height: var(--icon-size);
+  fill: var(--placeholder-color);
+  pointer-events: none;
+}
+
+.inputField {
+  appearance: none;
+  border: none;
+  background: none;
+  padding: var(--block-padding) var(--inline-padding);
+  line-height: 1.42;
+  font-size: inherit;
+  color: inherit;
+  padding-inline-start: calc(2.4em + var(--inline-padding) + var(--icon-size));
+  width: 100%;
+
+  @media screen and (min-width: $breakpoint-md) {
+    --block-padding: 1.28em;
+    --inline-padding: 2.28em;
+  }
+
+  &::placeholder {
+    display: none;
+    color: var(--placeholder-color);
+  }
+}

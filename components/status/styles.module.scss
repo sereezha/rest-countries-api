@@ -1,0 +1,33 @@
+@import "styles/variables";
+
+.status {
+  display: grid;
+  justify-items: center;
+  gap: 0.625em;
+  font-size: 1.6rem;
+  text-align: center;
+
+  @media screen and (min-width: $breakpoint-md) {
+    font-size: 2rem;
+  }
+}
+
+.empty .icon {
+  color: var(--text-color);
+
+  [data-id="body"] {
+    fill: var(--clr-white-0);
+
+    html[data-theme="dark"] & {
+      fill: var(--elements-bg);
+    }
+  }
+}
+
+.error {
+  color: var(--error-color);
+
+  .icon {
+    color: inherit;
+  }
+}

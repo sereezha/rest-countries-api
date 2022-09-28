@@ -1,0 +1,47 @@
+@import 'styles/variables';
+
+.bordersContainer {
+  display: grid;
+  align-items: start;
+  gap: 1.6rem;
+  margin-top: 3.4rem;
+
+  @media screen and (min-width: $breakpoint-md) {
+    grid-template-columns: auto 1fr;
+    margin-bottom: 6.8rem;
+  }
+}
+
+.bordersTitle {
+  margin-top: 0.3rem;
+  font-weight: var(--fw-semibold);
+  font-size: 1.6rem;
+  line-height: 1.5;
+}
+
+.bordersList {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.bordersItem {
+  display: flex;
+  a {
+    display: block;
+    min-width: 9.6rem;
+    padding: 0.5em 1.25em;
+    font-size: 1.2rem;
+    line-height: 1.4;
+    font-weight: var(--fw-light);
+    background-color: var(--elements-bg);
+    box-shadow: 0 0 0.4rem 0.1rem var(--clr-blue-460);
+    border-radius: 0.16em;
+    text-align: center;
+    text-decoration: none;
+  }
+
+  @media screen and (min-width: $breakpoint-md) {
+    font-size: 1.4rem;
+  }
+}

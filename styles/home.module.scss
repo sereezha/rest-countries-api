@@ -1,0 +1,51 @@
+@import 'styles/variables';
+
+.home {
+  padding-block: 2.4rem;
+
+  @media screen and (min-width: $breakpoint-md) {
+    padding-block: 4.8rem;
+  }
+}
+
+.homeInner {
+  display: grid;
+  gap: 3.2rem;
+
+  @media screen and (min-width: $breakpoint-md) {
+    gap: 4.8rem;
+  }
+}
+
+.controls {
+  display: flex;
+  flex-direction: column;
+  gap: 4rem;
+
+  @media screen and (min-width: $breakpoint-md) {
+    align-items: center;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 2rem;
+  }
+}
+
+.input {
+  width: 100%;
+  @media screen and (min-width: $breakpoint-md) {
+    max-width: 48rem;
+  }
+}
+
+.filter {
+  position: relative;
+  z-index: 2;
+  max-width: 20rem;
+  width: 100%;
+}
+
+.loadMore {
+  display: flex;
+  justify-content: center;
+  margin-block-start: 5rem;
+}

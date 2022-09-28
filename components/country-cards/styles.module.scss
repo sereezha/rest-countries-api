@@ -1,0 +1,19 @@
+@import 'styles/variables';
+
+.countryCards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 4rem;
+  margin-inline: auto;
+
+  @media screen and (min-width: $breakpoint-md) {
+    gap: 7.4rem;
+    margin-inline: 0;
+
+    &::after {
+      content: "";
+      flex-grow: 1;
+    }
+  }
+}

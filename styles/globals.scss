@@ -1,0 +1,135 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+}
+
+html:focus-within {
+  scroll-behavior: smooth;
+}
+
+body {
+  min-height: 100vh;
+  text-rendering: optimizeSpeed;
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
+
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  overflow-wrap: break-word;
+}
+
+#root,
+#__next {
+  isolation: isolate;
+}
+
+ul,
+ol {
+  margin: 0;
+  padding: 0;
+}
+
+ul[role="list"],
+ol[role="list"] {
+  list-style: none;
+}
+
+a {
+  color: inherit;
+}
+
+a:not([class]) {
+  text-decoration-skip-ink: auto;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+html {
+  --clr-white-0: hsl(0, 0%, 100%);
+  --clr-white-100: hsl(0, 0%, 98%);
+  --clr-white-500: hsl(0, 0%, 52%);
+
+  --clr-blue-400: hsl(209, 23%, 22%);
+  --clr-blue-430: hsla(0, 0%, 0%, 0.03);
+  --clr-blue-450: hsla(0, 0%, 0%, 0.05);
+  --clr-blue-460: hsla(0, 0%, 0%, 0.1);
+  --clr-blue-470: hsla(0, 0%, 0%, 0.3);
+  --clr-blue-500: hsl(207, 26%, 17%);
+  --clr-blue-800: hsl(200, 15%, 8%);
+
+  --error-color: hsl(359, 100%, 65%);
+  --text-color: var(--clr-blue-800);
+  --elements-bg: var(--clr-white-0);
+  --body-bg: var(--clr-white-100);
+
+  --fw-light: 300;
+  --fw-regular: 400;
+  --fw-semibold: 600;
+  --fw-extrabold: 800;
+
+  --border-radius: 0.5rem;
+  --transition-duration: 0.2s;
+
+  color-scheme: light;
+}
+
+html[data-theme="dark"] {
+  --text-color: var(--clr-white-0);
+  --elements-bg: var(--clr-blue-400);
+  --body-bg: var(--clr-blue-500);
+
+  color-scheme: dark;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Nunito Sans", sans-serif;
+  font-size: 1.6rem;
+  color: var(--text-color);
+  font-weight: var(--fw-regular);
+  background-color: var(--body-bg);
+}
+
+#__next {
+  min-height: 100vh;
+}

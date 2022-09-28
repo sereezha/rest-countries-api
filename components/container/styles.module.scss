@@ -1,0 +1,6 @@
+.container {
+  --padding-inline: 1.6rem;
+
+  width: min(128rem, 100% - var(--padding-inline) * 2);
+  margin-inline: auto;
+}
