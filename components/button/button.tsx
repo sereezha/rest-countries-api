@@ -11,7 +11,7 @@ export const Button: React.FunctionComponent<ButtonProps> = (props) => {
 
   return (
     <ButtonBase className={styles.button} {...restProps}>
-      {icon && <div className={styles.icon}>{icon}</div>}
+      {icon && <span className={styles.icon}>{icon}</span>}
       {children}
     </ButtonBase>
   );

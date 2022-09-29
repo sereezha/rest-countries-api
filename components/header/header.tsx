@@ -19,9 +19,9 @@ export const Header: React.FunctionComponent = () => {
             </Link>
           </h1>
           <ButtonBase onClick={toggleTheme} className={styles.button}>
-            <div className={styles.iconMoon}>
+            <span className={styles.iconMoon}>
               <Moon size="100%" stroke="inherit" fill="inherit" />
-            </div>
+            </span>
             Dark Mode
           </ButtonBase>
         </div>
